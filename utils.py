@@ -306,7 +306,7 @@ def plot_Disagreement_sim_TPR_line(df_all, FPR_d, P_sec_read, findings, sig_find
     plt.xticks(np.round(np.linspace(df_scores['TPR_d'].min(), df_scores['TPR_d'].max(), 8),2), rotation=0) 
     slope, b = np.polyfit(df_scores['TPR_d'], df_scores['score'], 1)
     if text:
-        vert = (max(1, df_scores['score'].max()) - df_scores['score'].min())/25
+        vert = (max(1, df_scores['score'].max()) - df_scores['score'].min())/1
         hor = (df_scores['TPR_d'].max() - df_scores['TPR_d'].min())/50
         plt.text(df_scores['TPR_d'].max()-hor*20, 1+vert, "Burden Increase", horizontalalignment='left',
                  verticalalignment='bottom', size='medium', color='black', weight='semibold')
@@ -434,11 +434,11 @@ def plot_Disagreement_sim_Pred_Qual_line(df_all, TPR_d, FPR_d, findings, sig_fin
     plt.xticks(np.round(np.linspace(df_scores['P_sec_read'].min(), df_scores['P_sec_read'].max(), 8),2), rotation=0) 
     slope, b = np.polyfit(df_scores['P_sec_read'], df_scores['score'], 1)
     if text:
-        vert = (max(1, df_scores['score'].max()) - df_scores['score'].min())/25
+        vert = (max(1, df_scores['score'].max()) - df_scores['score'].min())/10
         hor = (df_scores['P_sec_read'].max() - df_scores['P_sec_read'].min())/50
-        plt.text(df_scores['P_sec_read'].min()+hor*2, 1+vert, "Burden Increase", horizontalalignment='left',
+        plt.text(df_scores['P_sec_read'].max()-hor*20, 1+vert, "Burden Increase", horizontalalignment='left',
                  verticalalignment='bottom', size='medium', color='black', weight='semibold')
-        plt.text(df_scores['P_sec_read'].min()+hor*2, 1-vert*1.23, "Burden Reduction", 
+        plt.text(df_scores['P_sec_read'].max()-hor*20, 1-vert*1.23, "Burden Reduction", 
                  horizontalalignment='left', verticalalignment='top', size='medium', color='black', 
                  weight='semibold')
     sns.set_context("talk")
