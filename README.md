@@ -6,7 +6,7 @@ This repository contains code used in the ideation, development, and analysis of
 ### Table of Contents
 - Overview
 	- Workflow
-- Setup / Usage
+- Setup
 - Dataset
 - Estimate Reduced Burden
 - License
@@ -33,7 +33,7 @@ The “Review Required” category is for high clinical significance findings wi
 
 ![overview](/img/overview.png)
 
-## Setup / Usage
+## Setup
 #### Using conda
 ```
 $ conda env create --file disagree.yml
