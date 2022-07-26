@@ -4,13 +4,11 @@ This repository contains code used in the ideation, development, and analysis of
 
 
 ### Table of Contents
-- Overview
-	- Workflow
-- Setup
-- Dataset
-- Estimate Reduced Burden
-- License
-- Citation
+- [Overview](#overview)
+	- [Workflow](#workflow)
+- [Setup](#setup)
+- [Dataset](#dataset)
+- [Estimate Reduced Burden](#estimate-reduced-burden)
 
 ## Overview
 In recent years, significant strides in the machine learning (ML) for healthcare community have led to the integration of ML models into clinical workflows in a number of areas. From screening tools for diabetic retinopathy (Grzybowski et al.; Beede et al.) and colon cancer (Mori et al.; Liu et al.) to diagnostic aids for pulmonary nodules (Nam et al.) and tuberculosis (Lee et al.), artificial intelligence (AI) for clinical applications is becoming increasingly popular.
