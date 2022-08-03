@@ -6,9 +6,9 @@ This repository contains code used in the ideation, development, and analysis of
 ### Table of Contents
 - [Background](#background)
 - [A Novel Framework for AI-Clinician Collaboration](#a-novel-framework-for-ai-clinician-collaboration)
-- [Setup](#setup)
 - [Dataset](#dataset)
-- [Estimate Reduced Burden](#estimate-reduced-burden)
+- [Burden Comparison](#burden-comparison)
+- [Setup](#setup)
 
 ## Background
 In recent years, significant strides in the machine learning (ML) for healthcare community have led to the integration of ML models into clinical workflows in a number of areas. From screening tools for diabetic retinopathy and colon cancer to diagnostic aids for pulmonary nodules and tuberculosis, artificial intelligence (AI) for clinical applications is becoming increasingly popular.
@@ -44,7 +44,7 @@ Data consisted of chest x-ray images, predicted pathologies, final radiologist r
 
 Data is explored in `Data_Exploration.ipynb`. 
 
-## Estimate Reduced Burden
+## Burden Comparison
 
 To estimate the theoretical overall effect of the novel pipeline on clinician workload, we will compare the proposed framework to a baseline framework, where a Diagnostic Model similar to the DrAid tool sorts findings into the “Quick Access” and “Searchable” categories, displaying all findings that the AI predicts are present to the user. A diagram of both pipelines is included above and a demo of burden comparison is included in the `notebooks` directory.
 
