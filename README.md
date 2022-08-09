@@ -46,7 +46,7 @@ Data is explored in `Data_Exploration.ipynb`.
 
 ## Burden Comparison
 
-To estimate the theoretical overall effect of the novel pipeline on clinician workload, we will compare the proposed framework to a baseline framework, where a Diagnostic Model similar to the DrAid tool sorts findings into the “Quick Access” and “Searchable” categories, displaying all findings that the AI predicts are present to the user. A diagram of both pipelines is included above and a demo of burden comparison is included in the `notebooks` directory.
+To estimate the theoretical overall effect of the novel pipeline on clinician workload, we will compare the proposed framework to a baseline framework, where a Diagnostic Model similar to the DrAid tool sorts findings into the “Quick Access” and “Searchable” categories, displaying all findings that the AI predicts are present to the user. A diagram of both pipelines is included above and a demo of burden comparison is included in `notebooks/Burden_Comparison_Demo.ipynb`.
 
 In particular, we assign a cost to each potential user interaction in each of the pipelines and sort each finding from each patient in the Nam Dinh data into the appropriate leaves in both pipelines. Next, we determine the proportions of the data in each leaf and weight each leaf by total expected interactions. Finally, we sum these weighted proportions to obtain overall interaction burden for each pipeline and calculate the ratio of novel pipeline burden to baseline burden. 
 
