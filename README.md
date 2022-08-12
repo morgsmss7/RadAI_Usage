@@ -1,4 +1,4 @@
-# Efficient and Accurate Integration of Diagnostic Machine Learning Models into Radiology Reporting Workflows
+# AI-Clinician Collaboration via Disagreement Prediction: A Framework and Analysis Using Real-World Data from a Deployed Radiology AI System
 
 This repository contains code used in the ideation, development, and analysis of a novel AI-assistance framework for chest x-ray interpretation. We include two demo notebooks, one used to explore production data from an existing AI-assisted chest x-ray interpretation tool and one used for estimating changes in clinician burden between the novel and baseline pipelines. To learn more about the details of the pipelines and analysis performed, please refer to this document:  <a href="https://docs.google.com/document/d/19tmVz-mifbdNgVJqiWfnbzRC8oBEZYlMtYMCU3Pr084/edit?usp=sharing"><i>AI-Clinician Collaboration via Disagreement Prediction: A Framework and Analysis Using Real-World Data from a Deployed Radiology AI System
 </i></a>.
