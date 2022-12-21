@@ -306,11 +306,11 @@ def plot_Disagreement_sim_TPR_line(df_all, FPR_d, P_sec_read, findings, sig_find
     plt.xticks(np.round(np.linspace(df_scores['TPR_d'].min(), df_scores['TPR_d'].max(), 8),2), rotation=0) 
     slope, b = np.polyfit(df_scores['TPR_d'], df_scores['score'], 1)
     if text:
-        vert = (max(1, df_scores['score'].max()) - df_scores['score'].min())/1
+        vert = (max(1, df_scores['score'].max()) - df_scores['score'].min())/8
         hor = (df_scores['TPR_d'].max() - df_scores['TPR_d'].min())/50
-        plt.text(df_scores['TPR_d'].max()-hor*20, 1+vert, "Burden Increase", horizontalalignment='left',
+        plt.text(df_scores['TPR_d'].max()-hor*40, 1+vert, "Burden Increase", horizontalalignment='left',
                  verticalalignment='bottom', size='medium', color='black', weight='semibold')
-        plt.text(df_scores['TPR_d'].max()-hor*20, 1-vert*1.23, "Burden Reduction", horizontalalignment='left', 
+        plt.text(df_scores['TPR_d'].max()-hor*40, 1-vert*1.23, "Burden Reduction", horizontalalignment='left', 
                  verticalalignment='top', size='medium', color='black', weight='semibold')
     sns.set_context("talk")
     sns.despine(trim=True, offset={'bottom':-10, 'left':-13})
@@ -322,6 +322,7 @@ def plot_Disagreement_sim_TPR_line(df_all, FPR_d, P_sec_read, findings, sig_find
         plt.savefig('Disagreement_sim_TPR_line.png', dpi=300)
     plt.show()
     sns.set()
+    return df_scores
     
 def plot_Disagreement_sim_FPR_line(df_all, TPR_d, P_sec_read, findings, sig_findings, constants, FPR_ds = np.arange(0.01, 0.5, 0.05),
                                    text=False, n_trials = 5, slope_rot = 32, ytick_size = 0.02, save_fig=False, 
